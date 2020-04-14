@@ -1,0 +1,66 @@
+# 1. Установка главной страницы по умолчанию
+#-- DirectoryIndex index.shtml index.html index.htm index.php3 index.php
+DirectoryIndex shop.php index.html index.php index1.php
+
+#2. Определение страниц ошибок (error) в .htaccess
+ErrorDocument 403 /error/page403.html
+ErrorDocument 404 /error/page404.html
+ErrorDocument 500 /error/page500.html
+
+## Указание кодировки по умолчанию koi8-r, windows-1251, utf-8 или iso-8859-1 (English, etc)
+AddDefaultCharset utf-8
+# Что бы указать кодировку на загружаемые файлы
+#CharsetSourceEnc utf-8
+
+# Если необходимо отменить перекодировку сервером файлов:
+#CharsetDisable on
+
+# Запрет выдачи листинга пустого каталога
+#Options +Indexes
+Options -Indexes
+
+# При этом чаcть файлов формата *.php* *.pl не отображается
+IndexIgnore *.php* *.pl
+
+# -----------------------------------------
+# Настройки для сайта в рабочем режиме
+# PHP error handling for production servers
+#-- php_flag display_startup_errors off
+#-- php_flag display_errors off
+#-- php_flag html_errors off
+#-- php_flag log_errors on
+#-- php_flag ignore_repeated_errors off
+#-- php_flag ignore_repeated_source off
+#-- php_flag report_memleaks on
+#-- php_flag track_errors on
+#-- php_value docref_root 0
+#-- php_value docref_ext 0
+#-- php_value error_reporting -1
+#-- php_value log_errors_max_len 0
+#-- <Files /home/mysite.ua/www/logs/PHP_errors.log>
+#-- Order allow,deny
+#-- Deny from all
+#-- Satisfy All
+#-- </Files>
+
+# Конфигурация для отладки или разработки
+# PHP error handling for development servers
+#php_flag display_startup_errors on
+#php_flag display_errors on
+#php_flag html_errors on
+#php_flag log_errors on
+#php_flag ignore_repeated_errors off
+#php_flag ignore_repeated_source off
+#php_flag report_memleaks on
+#php_flag track_errors on
+#php_value docref_root 0
+#php_value docref_ext 0
+#php_value error_log /home/mysite.ua/www/logs/PHP_errors.log
+## [see footnote 3] # php_value error_reporting 999999999
+#php_value error_reporting -1
+#php_value log_errors_max_len 0
+#<Files /home/mysite.ua/www/logs/PHP_errors.log>
+#Order allow,deny
+#Deny from all
+#Satisfy All
+#</Files>

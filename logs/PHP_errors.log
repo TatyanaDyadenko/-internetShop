@@ -1,0 +1,10 @@
+[14-Feb-2020 15:13:58 UTC] PHP Notice:  Undefined variable: lng_contacts_h2_2 in W:\home\mysite.ua\www\inc\component_mail.php on line 123
+[14-Feb-2020 15:13:58 UTC] PHP Notice:  Undefined variable: test_msg_status in W:\home\mysite.ua\www\inc\component_mail.php on line 125
+[15-Feb-2020 15:59:52 UTC] PHP Notice:  Undefined variable: type in W:\home\mysite.ua\www\inc\register.inc.php on line 11
+[15-Feb-2020 15:59:54 UTC] PHP Notice:  Undefined variable: success in W:\home\mysite.ua\www\inc\register.inc.php on line 46
+[15-Feb-2020 15:59:54 UTC] PHP Notice:  Undefined variable: message in W:\home\mysite.ua\www\inc\register.inc.php on line 50
+[15-Feb-2020 15:59:54 UTC] PHP Notice:  Undefined variable: fam in W:\home\mysite.ua\www\inc\register.inc.php on line 59
+[15-Feb-2020 15:59:54 UTC] PHP Notice:  Undefined variable: im in W:\home\mysite.ua\www\inc\register.inc.php on line 63
+[15-Feb-2020 15:59:54 UTC] PHP Notice:  Undefined variable: addr in W:\home\mysite.ua\www\inc\register.inc.php on line 67
+[15-Feb-2020 15:59:54 UTC] PHP Notice:  Undefined variable: mail in W:\home\mysite.ua\www\inc\register.inc.php on line 71
+[15-Feb-2020 15:59:54 UTC] PHP Notice:  Undefined variable: login in W:\home\mysite.ua\www\inc\register.inc.php on line 75
